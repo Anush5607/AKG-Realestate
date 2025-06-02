@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AKG - AnushKumar Groups Of Company</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+  /* Background animation with multiple dark gradients shifting often */
+  @keyframes gradientShift {
+    0% {
+      background-position: 0% 50%;
+    }
+    25% {
+      background-position: 50% 100%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    75% {
+      background-position: 50% 0%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(270deg, 
+      #0b0f1e, #16222a, #283e51, #16222a, #0b0f1e);
+    background-size: 200% 200%;
+    animation: gradientShift 20s ease infinite;
+    color: #eee;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .wrapper {
+    max-width: 850px;
+    margin: auto;
+    padding: 40px 30px 80px;
+    background: rgba(15,17,23,0.72);
+    border-radius: 18px;
+    box-shadow: 0 0 38px rgba(0,0,0,0.7);
+    backdrop-filter: saturate(180%) blur(12px);
+    color: #ececec;
+    line-height: 1.55;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .crown-icon {
+    width: 50px;
+    height: 50px;
+    fill: #f4c542;
+    filter: drop-shadow(0 0 4px rgba(252, 206, 62, 0.7));
+    margin: 0;
+    margin-bottom: -8px; /* Pull the crown down to touch the K */
+  }
+
+  h1.logo {
+    font-weight: 700;
+    font-size: 5.5rem;
+    letter-spacing: 0.12em;
+    margin: 0;
+    color: #fff;
+    text-shadow: 0 3px 15px rgba(130,210,250,0.85);
+    line-height: 1; /* tighten line height */
+  }
+  p.company-name {
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin-top: 6px;
+    color: #a9b4c1;
+    letter-spacing: 0.08em;
+  }
+
+  section {
+    margin-bottom: 38px;
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: 2.1rem;
+    margin-bottom: 18px;
+    color: #a2caff;
+    text-shadow: 0 1px 6px rgba(162,202,255,0.6);
+    border-bottom: 2px solid #4a90e2;
+    padding-bottom: 6px;
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: #d7dbe1;
+  }
+
+  ul.commission-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 12px;
+  }
+
+  ul.commission-list li {
+    background: rgba(74, 144, 226, 0.15);
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #cce0ff;
+    box-shadow: 0 2px 5px rgba(74, 144, 226, 0.3);
+  }
+
+  .contact-info p {
+    margin: 6px 0;
+    font-weight: 500;
+    color: #a4c8ff;
+  }
+
+  .contact-info a {
+    color: #74a9ff;
+    text-decoration: none;
+  }
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 520px) {
+    h1.logo {
+      font-size: 3.7rem;
+    }
+    p.company-name {
+      font-size: 1.1rem;
+    }
+    h2 {
+      font-size: 1.6rem;
+    }
+    p, ul.commission-list li {
+      font-size: 1rem;
+    }
+    .wrapper {
+      padding: 30px 20px 60px;
+    }
+    .crown-icon {
+      width: 36px;
+      height: 36px;
+      margin-bottom: -6px;
+    }
+  }
+</style>
+</head>
+<body>
+  <main class="wrapper" role="main" aria-label="Company information and contact details">
+    <header>
+      <svg class="crown-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true" focusable="false" role="img">
+        <path d="M2 20l10 29 10-24 10 24 10-29 10 29 10-24 2 24H0l2-29z"/>
+        <path d="M4 24l8 23 8-21 8 21 8-23 8 23 8-21 2 21H2l2-23z" fill="none" stroke="#f4c542" stroke-width="2"/>
+      </svg>
+      <h1 class="logo">AKG</h1>
+      <p class="company-name">AnushKumar Groups Of Company</p>
+    </header>
+
+    <section id="about-me" aria-labelledby="about-me-heading">
+      <h2 id="about-me-heading">About Me</h2>
+      <p>
+        Welcome to AnushKumar Groups Of Company (AKG), a pioneering real estate business dedicated to providing trustworthy and tailored property solutions. With years of expertise, we pride ourselves on connecting clients with their dream homes and profitable investments in a transparent and professional manner.
+      </p>
+    </section>
+
+    <section id="what-we-do" aria-labelledby="what-we-do-heading">
+      <h2 id="what-we-do-heading">What We Do</h2>
+      <p>
+        At AKG, we specialize in residential and commercial property sales, rentals, and investments. Our services include property consultation, market analysis, negotiation support, and after-sales assistance, ensuring our clients have a seamless journey from house hunting to finalizing the deal.
+      </p>
+    </section>
+
+    <section id="commission" aria-labelledby="commission-heading">
+      <h2 id="commission-heading">Commission Structure</h2>
+      <p>We operate with transparent and competitive commission fees based on the property type and deal size:</p>
+      <ul class="commission-list">
+        <li>Residential Properties: 1.5% of the sale price per property</li>
+        <li>Commercial Properties: 2% of the sale price per property</li>
+        <li>Rental Properties: One month’s rent as commission</li>
+        <li>Property Management: 5% of monthly rental income</li>
+      </ul>
+      <p>
+        Our commission ensures dedicated, high-quality support and expert guidance throughout your real estate experience.
+      </p>
+    </section>
+
+    <section id="contact-info" aria-labelledby="contact-info-heading">
+      <h2 id="contact-info-heading">Contact Info</h2>
+      <p>We are ready to assist you with your real estate needs. Reach out anytime:</p>
+      <p><strong>Phone:</strong> <a href="tel:+919876543210">+91 7708917171</a></p>
+      <p><strong>Email:</strong> <a href="mailto:contact@akgcompany.com">anushkumr0506@gmail.com</a></p>
+      <p><strong>Address:</strong> 141,E-1 kalangal road, Sulur, Coimbatore, India</p>
+    </section>
+  </main>
+</body>
+</html>
+
